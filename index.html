@@ -1,118 +1,2018 @@
+<!--最新修改日期：2025-5-16 年/月/日-->
+<!--湖南琦尔设备责任有限公司官方网站 版权所有-->
+<!--2025 hncheer.ltd AII Rigth Reserved-->
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>湖南琦尔设备有限公司</title>
-    <!-- 添加 Tailwind CSS CDN -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
-    <!-- 添加 AOS 动画库 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <title>湖南琦尔设备有限公司 - 高科技民营企业</title>
     <style>
-        html {
+        /* 自定义重置和基础样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        @font-face {
+            font-family: 'NotoSansSC';
+            src: url('data:font/woff2;base64,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') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+        
+        :root {
+            --primary: #5D5CDE;
+            --primary-dark: #4240d4;
+            --secondary: #8B5CF6;
+            --secondary-dark: #7c3aed;
+            --text-light: #ffffff;
+            --text-dark: #333333;
+            --bg-light: #ffffff;
+            --bg-dark: #121212;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --error: #ef4444;
+        }
+        
+        body {
+            font-family: 'NotoSansSC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.5;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
             scroll-behavior: smooth;
         }
         
-        /* 自定义样式 */
-        .gradient-bg {
-            background: linear-gradient(90deg, #1E40AF 0%, #1E3A8A 100%);
+        .dark {
+            color-scheme: dark;
+            color: var(--text-light);
+            background-color: var(--bg-dark);
         }
         
-        .nav-link {
+        h1, h2, h3, h4, h5, h6 {
+            margin-top: 0;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        
+        p {
+            margin-top: 0;
+        }
+        
+        a {
+            color: var(--primary);
+            text-decoration: none;
             transition: all 0.3s ease;
         }
         
-        .nav-link:hover {
-            background-color: rgba(255, 255, 255, 0.1);
+        a:hover {
+            color: var(--primary-dark);
         }
-
-        /* 移动端菜单样式 */
-        .mobile-menu {
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        button, input, select, textarea {
+            font-family: inherit;
+            font-size: 100%;
+            line-height: 1.15;
+            margin: 0;
+        }
+        
+        button, 
+        [type="button"], 
+        [type="reset"], 
+        [type="submit"] {
+            -webkit-appearance: button;
+            cursor: pointer;
+        }
+        
+        /* 容器 */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            margin: 0 auto;
+        }
+        
+        /* 头部 */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            transition: all 0.3s ease;
+        }
+        
+        .header.scrolled {
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .dark .header.scrolled {
+            background: rgba(18, 18, 18, 0.95);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 0;
+            transition: all 0.3s ease;
+        }
+        
+        .header.scrolled .nav {
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            font-weight: 700;
+            font-size: 1.75rem;
+            color: var(--primary);
+        }
+        
+        .logo-text {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+        }
+        
+        .nav-item {
+            margin-left: 2rem;
+        }
+        
+        .nav-link {
+            color: var(--text-dark);
+            font-weight: 500;
+            position: relative;
+            padding-bottom: 0.25rem;
+        }
+        
+        .dark .nav-link {
+            color: var(--text-light);
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after, 
+        .nav-link.active::after {
+            width: 100%;
+        }
+        
+        .hamburger {
             display: none;
+            cursor: pointer;
+            width: 30px;
+            height: 20px;
+            position: relative;
+            z-index: 101;
         }
-
-        @media (max-width: 768px) {
-            .mobile-menu-button {
-                display: block;
+        
+        .hamburger span {
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: var(--text-dark);
+            transition: all 0.3s ease;
+            left: 0;
+        }
+        
+        .dark .hamburger span {
+            background-color: var(--text-light);
+        }
+        
+        .hamburger span:nth-child(1) {
+            top: 0;
+        }
+        
+        .hamburger span:nth-child(2) {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        
+        .hamburger span:nth-child(3) {
+            bottom: 0;
+        }
+        
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg);
+            top: 9px;
+        }
+        
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+        
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg);
+            bottom: 9px;
+        }
+        
+        /* 下拉菜单 */
+        .dropdown {
+            position: relative;
+        }
+        
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            margin-top: 0.5rem;
+            background: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+            z-index: 10;
+            min-width: 200px;
+            padding: 0.75rem 0;
+        }
+        
+        .dark .dropdown-menu {
+            background: #1a1a1a;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+        
+        .dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        
+        .dropdown-item {
+            display: block;
+            padding: 0.5rem 1.5rem;
+            color: var(--text-dark);
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+        }
+        
+        .dark .dropdown-item {
+            color: var(--text-light);
+        }
+        
+        .dropdown-item:hover {
+            background: rgba(93, 92, 222, 0.1);
+            color: var(--primary);
+        }
+        
+        /* 移动导航 */
+        .mobile-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: var(--bg-light);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 100;
+            transform: translateX(-100%);
+            transition: transform 0.4s cubic-bezier(0.65, 0, 0.35, 1);
+        }
+        
+        .dark .mobile-nav {
+            background-color: var(--bg-dark);
+        }
+        
+        .mobile-nav.active {
+            transform: translateX(0);
+        }
+        
+        .mobile-nav-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        
+        .mobile-nav-item {
+            margin: 1.5rem 0;
+        }
+        
+        .mobile-nav-link {
+            color: var(--text-dark);
+            font-size: 1.25rem;
+            font-weight: 500;
+            position: relative;
+            display: inline-block;
+            padding: 0.5rem 1rem;
+        }
+        
+        .dark .mobile-nav-link {
+            color: var(--text-light);
+        }
+        
+        .mobile-nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            transition: width 0.3s ease;
+        }
+        
+        .mobile-nav-link:hover::after, 
+        .mobile-nav-link.active::after {
+            width: 100%;
+        }
+        
+        /* 英雄区 */
+        .hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            color: white;
+            overflow: hidden;
+            background-color: black;
+        }
+        
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://www.tencent.com/img/banners/brief-1-1.jpg');
+            background-size: cover;
+            background-position: center;
+            z-index: 1;
+            transform: scale(1.05);
+            animation: zoom 15s ease-in-out infinite alternate;
+        }
+        
+        @keyframes zoom {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.1); }
+        }
+        
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 100%);
+            z-index: 2;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 3;
+            max-width: 800px;
+            padding: 0 20px;
+        }
+        
+        .hero-tag {
+            display: inline-block;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 500;
+            font-size: 0.875rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+            animation: slideInRight 0.8s ease-out;
+        }
+        
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            animation: slideInUp 1s ease-out;
+        }
+        
+        .hero-title .gradient {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .hero-subtitle {
+            font-size: 2rem;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 2rem;
+            animation: slideInUp 1.2s ease-out;
+        }
+        
+        .hero-text {
+            font-size: 1.25rem;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 2.5rem;
+            max-width: 600px;
+            animation: fadeIn 1.5s ease-out;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            animation: fadeIn 1.8s ease-out;
+        }
+        
+        /* 按钮 */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.875rem 2rem;
+            font-size: 1rem;
+            font-weight: 500;
+            border-radius: 9999px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            cursor: pointer;
+            border: none;
+            outline: none;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            color: white;
+            box-shadow: 0 10px 20px -10px rgba(93, 92, 222, 0.5);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 25px -10px rgba(93, 92, 222, 0.6);
+        }
+        
+        .btn-primary::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, var(--secondary), var(--primary));
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .btn-primary:hover::after {
+            opacity: 1;
+        }
+        
+        .btn-outline {
+            background: transparent;
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .btn-outline:hover {
+            border-color: rgba(255, 255, 255, 0.5);
+            transform: translateY(-3px);
+        }
+        
+        .btn-outline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            transition: left 0.3s ease;
+            z-index: -1;
+        }
+        
+        .btn-outline:hover::before {
+            left: 0;
+        }
+        
+        /* 装饰元素 */
+        .hero-decor-1 {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 66.666%;
+            height: 33.333%;
+            background: linear-gradient(to top left, rgba(93, 92, 222, 0.2), transparent);
+            pointer-events: none;
+            z-index: 2;
+        }
+        
+        .hero-decor-2 {
+            position: absolute;
+            top: 25%;
+            right: 10px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: rgba(139, 92, 246, 0.1);
+            pointer-events: none;
+            z-index: 2;
+            animation: pulse 4s infinite linear;
+        }
+        
+        .hero-decor-3 {
+            position: absolute;
+            bottom: 25%;
+            left: 10px;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: rgba(93, 92, 222, 0.1);
+            pointer-events: none;
+            z-index: 2;
+            animation: pulse 6s infinite linear 1s;
+        }
+        
+        /* 滚动指示器 */
+        .scroll-indicator {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: rgba(255, 255, 255, 0.8);
+            z-index: 10;
+            animation: bounce 2s ease-in-out infinite;
+        }
+        
+        .scroll-indicator-text {
+            margin-bottom: 8px;
+            font-size: 0.875rem;
+        }
+        
+        .scroll-indicator-mouse {
+            width: 30px;
+            height: 50px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .scroll-indicator-dot {
+            width: 6px;
+            height: 6px;
+            background-color: white;
+            border-radius: 50%;
+            margin-top: 8px;
+            animation: scrollDown 2s infinite;
+        }
+        
+        /* 业务板块 */
+        .section {
+            padding: 5rem 0;
+        }
+        
+        .section-light {
+            background-color: var(--bg-light);
+        }
+        
+        .dark .section-light {
+            background-color: var(--bg-dark);
+        }
+        
+        .section-dark {
+            background-color: #f8f9fa;
+        }
+        
+        .dark .section-dark {
+            background-color: #1a1a1a;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-heading {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: relative;
+        }
+        
+        .section-heading::after {
+            content: attr(data-text);
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            opacity: 0.5;
+            filter: blur(8px);
+        }
+        
+        .section-subheading {
+            font-size: 1.125rem;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .dark .section-subheading {
+            color: #aaa;
+        }
+        
+        /* 卡片 */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .card {
+            background: var(--bg-light);
+            border-radius: 1rem;
+            overflow: hidden;
+            transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transform: translateZ(0);
+            position: relative;
+        }
+        
+        .dark .card {
+            background: #1e1e1e;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .card:hover {
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
+        }
+        
+        .dark .card:hover {
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: inherit;
+            padding: 2px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+        
+        .card:hover::before {
+            opacity: 1;
+        }
+        
+        .card-img {
+            height: 200px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+        }
+        
+        .card-content {
+            padding: 1.5rem;
+        }
+        
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            color: var(--text-dark);
+        }
+        
+        .dark .card-title {
+            color: var(--text-light);
+        }
+        
+        .card-text {
+            color: #666;
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+        
+        .dark .card-text {
+            color: #aaa;
+        }
+        
+        .card-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 1.5rem 0;
+        }
+        
+        .card-list-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 0.5rem;
+            color: #666;
+        }
+        
+        .dark .card-list-item {
+            color: #aaa;
+        }
+        
+        .card-list-icon {
+            color: var(--primary);
+            margin-right: 0.5rem;
+            flex-shrink: 0;
+        }
+        
+        /* 关于我们 */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .about-content {
+            max-width: 540px;
+        }
+        
+        .about-title {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .about-text {
+            color: #666;
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+        
+        .dark .about-text {
+            color: #aaa;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 1rem;
+            margin-top: 2.5rem;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 0.25rem;
+        }
+        
+        .stat-label {
+            font-size: 0.875rem;
+            color: #666;
+        }
+        
+        .dark .stat-label {
+            color: #aaa;
+        }
+        
+        .about-card {
+            position: relative;
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .dark .about-card {
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .about-card-bg {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            aspect-ratio: 16/9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+        
+        .about-card-content {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        
+        .about-card-circle1 {
+            position: absolute;
+            top: -25px;
+            left: -25px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .about-card-circle2 {
+            position: absolute;
+            bottom: -30px;
+            right: -30px;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .about-company-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: white;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .company-name {
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+        
+        .company-details {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+        
+        .company-detail {
+            display: flex;
+            align-items: center;
+        }
+        
+        .detail-icon {
+            width: 24px;
+            display: flex;
+            justify-content: center;
+            margin-right: 0.75rem;
+        }
+        
+        .company-tag {
+            text-align: center;
+            margin-top: 1.5rem;
+        }
+        
+        .company-tag-text {
+            font-size: 0.875rem;
+        }
+        
+        .company-tag-subtext {
+            font-size: 0.75rem;
+            opacity: 0.75;
+            margin-top: 0.25rem;
+        }
+        
+        /* 新闻和动态 */
+        .news-item {
+            border-radius: 1rem;
+            overflow: hidden;
+            background: var(--bg-light);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .dark .news-item {
+            background: #1e1e1e;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .news-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .dark .news-item:hover {
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+        
+        .news-img {
+            height: 200px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2.5rem;
+        }
+        
+        .news-content {
+            padding: 1.5rem;
+        }
+        
+        .news-date {
+            display: flex;
+            align-items: center;
+            color: #999;
+            font-size: 0.875rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .news-date i {
+            margin-right: 0.5rem;
+        }
+        
+        .news-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            color: var(--text-dark);
+        }
+        
+        .dark .news-title {
+            color: var(--text-light);
+        }
+        
+        .news-text {
+            color: #666;
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+        
+        .dark .news-text {
+            color: #aaa;
+        }
+        
+        .news-link {
+            display: inline-flex;
+            align-items: center;
+            color: var(--primary);
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+        
+        .news-link i {
+            margin-left: 0.25rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .news-link:hover i {
+            transform: translateX(4px);
+        }
+        
+        .btn-outline-primary {
+            background: transparent;
+            color: var(--primary);
+            border: 1px solid var(--primary);
+        }
+        
+        .btn-outline-primary:hover {
+            background: var(--primary);
+            color: white;
+        }
+        
+        /* 联系我们 */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+        
+        .contact-info {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 1rem;
+            padding: 2rem;
+            height: 100%;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .dark .contact-info {
+            background: rgba(18, 18, 18, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .info-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: var(--text-dark);
+        }
+        
+        .dark .info-title {
+            color: var(--text-light);
+        }
+        
+        .info-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .info-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: rgba(93, 92, 222, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-size: 1.25rem;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+        
+        .dark .info-icon {
+            background: rgba(93, 92, 222, 0.2);
+        }
+        
+        .info-content {
+            flex: 1;
+        }
+        
+        .info-label {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+            color: var(--text-dark);
+        }
+        
+        .dark .info-label {
+            color: var(--text-light);
+        }
+        
+        .info-text {
+            color: #666;
+            line-height: 1.5;
+        }
+        
+        .dark .info-text {
+            color: #aaa;
+        }
+        
+        .social-links {
+            margin-top: 2rem;
+        }
+        
+        .social-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+        
+        .dark .social-title {
+            color: var(--text-light);
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.25rem;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            transform: translateY(-5px);
+            background: var(--primary-dark);
+        }
+        
+        .contact-form {
+            background: var(--bg-light);
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .dark .contact-form {
+            background: #1e1e1e;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .form-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: var(--text-dark);
+        }
+        
+        .dark .form-title {
+            color: var(--text-light);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+        
+        .dark .form-label {
+            color: var(--text-light);
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 0.5rem;
+            background: var(--bg-light);
+            color: var(--text-dark);
+            transition: all 0.3s ease;
+        }
+        
+        .dark .form-control {
+            background: #2a2a2a;
+            border-color: #444;
+            color: var(--text-light);
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(93, 92, 222, 0.1);
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        
+        .form-textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        /* 页脚 */
+        .footer {
+            background-color: #222;
+            color: white;
+            padding: 4rem 0 2rem;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .footer-logo-text {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-right: 0.5rem;
+        }
+        
+        .footer-company {
+            font-size: 0.875rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        .footer-description {
+            color: rgba(255, 255, 255, 0.6);
+            margin-bottom: 1.5rem;
+            max-width: 300px;
+            line-height: 1.6;
+        }
+        
+        .footer-social {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .footer-social-link {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 1.25rem;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-social-link:hover {
+            color: white;
+        }
+        
+        .footer-heading {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: white;
+        }
+        
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .footer-link-item {
+            margin-bottom: 0.75rem;
+        }
+        
+        .footer-link {
+            color: rgba(255, 255, 255, 0.6);
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+        }
+        
+        .footer-link:hover {
+            color: white;
+            transform: translateX(5px);
+        }
+        
+        .footer-contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        .footer-contact-icon {
+            color: var(--primary);
+            margin-right: 0.75rem;
+            margin-top: 0.25rem;
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 1.5rem;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 0.875rem;
+        }
+        
+        /* 聊天小组件 */
+        .chat-widget {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 99;
+        }
+        
+        .chat-button {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 10px 25px rgba(93, 92, 222, 0.3);
+            transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+        
+        .chat-button:hover {
+            transform: scale(1.1) translateY(-5px);
+            box-shadow: 0 15px 35px rgba(93, 92, 222, 0.4);
+        }
+        
+        .chat-popup {
+            position: absolute;
+            bottom: 80px;
+            right: 0;
+            width: 350px;
+            background: white;
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+            transform: scale(0);
+            opacity: 0;
+            transform-origin: bottom right;
+            transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+        
+        .dark .chat-popup {
+            background: #1e1e1e;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
+        }
+        
+        .chat-popup.active {
+            transform: scale(1);
+            opacity: 1;
+        }
+        
+        .chat-header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            padding: 1rem;
+            color: white;
+        }
+        
+        .chat-header-inner {
+            display: flex;
+            align-items: center;
+        }
+        
+        .chat-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+        }
+        
+        .chat-title {
+            font-weight: 700;
+            margin: 0;
+        }
+        
+        .chat-subtitle {
+            font-size: 0.75rem;
+            opacity: 0.8;
+        }
+        
+        .chat-body {
+            height: 350px;
+            overflow-y: auto;
+            padding: 1rem;
+            background: #f5f5f5;
+        }
+        
+        .dark .chat-body {
+            background: #2a2a2a;
+        }
+        
+        .chat-messages {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .message {
+            max-width: 85%;
+            border-radius: 1rem;
+            padding: 0.75rem 1rem;
+            margin-bottom: 1rem;
+            position: relative;
+            word-break: break-word;
+            animation: fadeIn 0.3s ease;
+        }
+        
+        .message.bot {
+            background: white;
+            color: #333;
+            align-self: flex-start;
+            border-bottom-left-radius: 0.25rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+        
+        .dark .message.bot {
+            background: #333;
+            color: #eee;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        
+        .message.user {
+            background: var(--primary);
+            color: white;
+            align-self: flex-end;
+            border-bottom-right-radius: 0.25rem;
+        }
+        
+        .message.typing {
+            background: white;
+            color: #333;
+            align-self: flex-start;
+            border-bottom-left-radius: 0.25rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 4rem;
+            height: 2rem;
+        }
+        
+        .dark .message.typing {
+            background: #333;
+            color: #eee;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        
+        .typing-dots {
+            display: flex;
+        }
+        
+        .typing-dot {
+            width: 8px;
+            height: 8px;
+            background: #aaa;
+            border-radius: 50%;
+            margin: 0 3px;
+            animation: typingDot 1.5s infinite ease-in-out;
+        }
+        
+        .typing-dot:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+        
+        .typing-dot:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+        
+        @keyframes typingDot {
+            0%, 60%, 100% { transform: translateY(0); }
+            30% { transform: translateY(-5px); }
+        }
+        
+        .chat-footer {
+            padding: 0.75rem;
+            border-top: 1px solid #eee;
+            background: white;
+        }
+        
+        .dark .chat-footer {
+            border-top-color: #444;
+            background: #1e1e1e;
+        }
+        
+        .chat-form {
+            display: flex;
+            align-items: center;
+        }
+        
+        .chat-input {
+            flex: 1;
+            padding: 0.75rem 1rem;
+            border: 1px solid #ddd;
+            border-radius: 1.5rem;
+            font-size: 0.95rem;
+            outline: none;
+            background: #f9f9f9;
+            color: #333;
+        }
+        
+        .dark .chat-input {
+            background: #2a2a2a;
+            border-color: #444;
+            color: #eee;
+        }
+        
+        .chat-input:focus {
+            border-color: var(--primary);
+        }
+        
+        .chat-send {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: var(--primary);
+            color: white;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 0.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .chat-send:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+        
+        .chat-powered {
+            text-align: center;
+            margin-top: 0.5rem;
+            font-size: 0.75rem;
+            color: #999;
+        }
+        
+        .dark .chat-powered {
+            color: #777;
+        }
+        
+        .chat-powered a {
+            color: #777;
+            transition: all 0.3s ease;
+        }
+        
+        .chat-powered a:hover {
+            color: var(--primary);
+        }
+        
+        /* 返回顶部按钮 */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 100px;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: var(--primary);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(93, 92, 222, 0.3);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 99;
+        }
+        
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .back-to-top:hover {
+            background: var(--primary-dark);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(93, 92, 222, 0.4);
+        }
+        
+        /* 动画 */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 0.9; }
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-15px); }
+            60% { transform: translateY(-7px); }
+        }
+        
+        @keyframes scrollDown {
+            0% { transform: translateY(0); opacity: 1; }
+            100% { transform: translateY(10px); opacity: 0; }
+        }
+        
+        .reveal {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s ease;
+        }
+        
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* 响应式样式 */
+        @media (max-width: 1024px) {
+            .hero-title {
+                font-size: 3rem;
             }
             
-            .desktop-menu {
+            .hero-subtitle {
+                font-size: 1.75rem;
+            }
+            
+            .section-heading {
+                font-size: 2rem;
+            }
+            
+            .about-grid {
+                gap: 2rem;
+            }
+            
+            .contact-grid {
+                gap: 1.5rem;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            .container {
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+            }
+            
+            .nav-links {
                 display: none;
             }
             
-            .mobile-menu.active {
-                display: block;
+            .hamburger {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.5rem;
+            }
+            
+            .hero-text {
+                font-size: 1rem;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+            }
+            
+            .hero-buttons .btn {
+                width: 100%;
+            }
+            
+            .section-heading {
+                font-size: 1.75rem;
+            }
+            
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            
+            .chat-popup {
+                width: 300px;
+                right: -25px;
+            }
+            
+            .back-to-top {
+                right: 30px;
+                bottom: 100px;
             }
         }
     </style>
 </head>
-<body class="bg-gray-50">
+<body>
+    <!-- 检测暗黑模式 -->
+    <script>
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        }
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+            if (event.matches) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        });
+    </script>
+
     <!-- 导航栏 -->
-    <nav class="bg-blue-600 fixed w-full z-50">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="flex justify-between h-16 items-center">
-                <div class="flex-shrink-0">
-                    <h1 class="text-white text-xl font-bold">湖南琦尔设备</h1>
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="https://www.hncheer.ltd" class="logo">
+                    <span class="logo-text">Cheer</span>
+                    <span class="hidden md-block">湖南琦尔设备有限公司</span>
+                </a>
+                
+                <ul class="nav-links">
+                    <li class="nav-item"><a href="#home" class="nav-link active">首页</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#business" class="nav-link">业务板块</a>
+                        <div class="dropdown-menu">
+                            <a href="#drone" class="dropdown-item">无人机智能巡检</a>
+                            <a href="#pipeline" class="dropdown-item">管道安全技术</a>
+                            <a href="#separation" class="dropdown-item">固液分离设备</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="#about" class="nav-link">关于我们</a></li>
+                    <li class="nav-item"><a href="#news" class="nav-link">新闻动态</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">联系方式</a></li>
+                </ul>
+                
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
-                <!-- 桌面端导航 -->
-                <div class="hidden md:flex items-center space-x-4">
-                    <a href="#home" class="text-white nav-link px-3 py-2 rounded-md">首页</a>
-                    <a href="#about" class="text-white nav-link px-3 py-2 rounded-md">关于我们</a>
-                    <a href="#products" class="text-white nav-link px-3 py-2 rounded-md">产品服务</a>
-                    <a href="#contact" class="text-white nav-link px-3 py-2 rounded-md">联系我们</a>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- 移动导航 -->
+    <div class="mobile-nav" id="mobile-nav">
+        <ul class="mobile-nav-links">
+            <li class="mobile-nav-item"><a href="#home" class="mobile-nav-link">首页</a></li>
+            <li class="mobile-nav-item"><a href="#business" class="mobile-nav-link">业务板块</a></li>
+            <li class="mobile-nav-item"><a href="#drone" class="mobile-nav-link">无人机智能巡检</a></li>
+            <li class="mobile-nav-item"><a href="#pipeline" class="mobile-nav-link">管道安全技术</a></li>
+            <li class="mobile-nav-item"><a href="#separation" class="mobile-nav-link">固液分离设备</a></li>
+            <li class="mobile-nav-item"><a href="#about" class="mobile-nav-link">关于我们</a></li>
+            <li class="mobile-nav-item"><a href="#news" class="mobile-nav-link">新闻动态</a></li>
+            <li class="mobile-nav-item"><a href="#contact" class="mobile-nav-link">联系方式</a></li>
+        </ul>
+    </div>
+
+    <!-- 英雄区 -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-tag">湖南琦尔设备有限公司</span>
+                <h1 class="hero-title">
+                    <span>工业智能</span>
+                    <span class="gradient">新标准</span>
+                </h1>
+                <h2 class="hero-subtitle">固液分离与智能巡检专家</h2>
+                <p class="hero-text">
+                    源自中国石化，专注于工业自动化创新解决方案的高科技民营企业
+                </p>
+                <div class="hero-buttons">
+                    <a href="#business" class="btn btn-primary">
+                        探索我们的技术
+                        <i class="fas fa-arrow-right" style="margin-left:8px;"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        联系我们
+                    </a>
                 </div>
-                <!-- 移动端菜单按钮 -->
-                <button class="md:hidden mobile-menu-button p-2 rounded-md text-white hover:bg-blue-500 focus:outline-none" onclick="toggleMenu()">
-                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                    </svg>
-                </button>
-            </div>
-            <!-- 移动端菜单 -->
-            <div class="mobile-menu hidden md:hidden">
-                <a href="#home" class="block text-white px-3 py-2 rounded-md hover:bg-blue-500">首页</a>
-                <a href="#about" class="block text-white px-3 py-2 rounded-md hover:bg-blue-500">关于我们</a>
-                <a href="#products" class="block text-white px-3 py-2 rounded-md hover:bg-blue-500">产品服务</a>
-                <a href="#contact" class="block text-white px-3 py-2 rounded-md hover:bg-blue-500">联系我们</a>
             </div>
         </div>
-    </nav>
+        
+        <div class="hero-decor-1"></div>
+        <div class="hero-decor-2"></div>
+        <div class="hero-decor-3"></div>
+        
+        <a href="#business" class="scroll-indicator">
+            <span class="scroll-indicator-text">探索更多</span>
+            <div class="scroll-indicator-mouse">
+                <span class="scroll-indicator-dot"></span>
+            </div>
+        </a>
+    </section>
 
-    <!-- 主页横幅 -->
-    <section id="home" class="pt-16 gradient-bg">
-        <div class="max-w-7xl mx-auto px-4 py-20">
-            <div class="text-center">
-                <h2 class="text-4xl font-bold text-white mb-4" data-aos="fade-up">工业设备解决方案专家</h2>
-                <p class="text-xl text-white mb-8" data-aos="fade-up" data-aos-delay="100">为您提供最先进的管道安全监测和智能巡检服务</p>
-                <a href="#contact" class="inline-block bg-white text-blue-600 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300" data-aos="fade-up" data-aos-delay="200">联系我们</a>
+    <!-- 核心业务 -->
+    <section id="business" class="section section-light">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2 class="section-heading" data-text="我们的核心业务">我们的核心业务</h2>
+                <p class="section-subheading">湖南琦尔设备有限公司提供全方位的工业解决方案，从固液分离设备到智能巡检服务，我们致力于为客户创造价值。</p>
+            </div>
+            
+            <div class="card-grid">
+                <!-- 业务1：无人机智能巡检 -->
+                <div id="drone" class="card reveal" style="animation-delay:0.1s;">
+                    <div class="card-img">
+                        <i class="fas fa-drone-alt"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">无人机智能巡检服务</h3>
+                        <p class="card-text">利用先进的无人机技术和AI视觉分析，为工业设施提供高效、精准的自动化巡检服务，大幅提升检测效率和安全性。</p>
+                        <ul class="card-list">
+                            <li class="card-list-item">
+                                <i class="fas fa-check card-list-icon"></i>
+                                <span>高清摄像与热成像技术</span>
+                            </li>
+                            <li class="card-list-item">
+                                <i class="fas fa-check card-list-icon"></i>
+                                <span>自动缺陷识别与报告</span>
+                            </li>
+                            <li class="card-list-item">
+                                <i class="fas fa-check card-list-icon"></i>
+                                <span>全天候可靠作业能力</span>
+                            </li>
+                        </ul>
+                        <a href="product-wrj.html" class="btn btn-primary">了解详情</a>
+                    </div>
+                </div>
+                
+                <!-- 业务2：管道安全技术 -->
+                <div id="pipeline" class="card reveal" style="animation-delay:0.3s;">
+                    <div class="card-img" style="background:linear-gradient(135deg, #8B5CF6, #6D28D9);">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">管道全方面安全技术</h3>
+                        <p class="card-text">提供管道系统全生命周期的安全技术解决方案，包括检测、诊断、预防和维护服务，确保设备稳定运行。</p>
+                        <ul class="card-list">
+                            <li class="card-list-item">
+                                <i class="fas fa-check card-list-icon" style="color:#8B5CF6;"></i>
+                                <span>压力监测与泄漏防护</span>
+                            </li>
+                            <li class="card-list-item">
+                                <i class="fas fa-check card-list-icon" style="color:#8B5CF6;"></i>
+                                <span>腐蚀分析与寿命评估</span>
+                            </li>
+                            <li class="card-list-item">
+                                <i class="fas fa-check card-list-icon" style="color:#8B5CF6;"></i>
+                                <span>预测性维护系统</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- 业务3：固液分离设备 -->
+                <div id="separation" class="card reveal" style="animation-delay:0.5s;">
+                    <div class="card-img" style="background:linear-gradient(135deg, #5D5CDE, #8B5CF6);">
+                        <i class="fas fa-filter"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">固液分离设备</h3>
+                        <p class="card-text">公司具有得天独厚的区域优势和石化背景，原材料石油焦主要依托湖南石化的延迟焦化装置提供，主要产品为20万t/a煅后焦，产品煅后石油焦为高容量锂离子动力负极的主要原材料，同时，可广泛应用于铝行业阳极碳素制品和增碳剂。</p>
+                        <ul class="card-list">
+                            <li class="card-list-item">
+                                <i class="fas fa-check card-list-icon" style="color:#7C3AED;"></i>
+                                <span>地理及成本优势</span>
+                            </li>
+                            <li class="card-list-item">
+                                <i class="fas fa-check card-list-icon" style="color:#7C3AED;"></i>
+                                <span>资源优勢</span>
+                            </li>
+                            <li class="card-list-item">
+                                <i class="fas fa-check card-list-icon" style="color:#7C3AED;"></i>
+                                <span>设备技术优勢</span>
+                            </li>
+                        </ul>
+                        <a href="product-fuji.html" class="btn btn-primary">了解详情</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-gray-900 mb-4" data-aos="fade-up">关于我们</h2>
-                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
-            </div>
-            <div class="grid md:grid-cols-2 gap-8 items-center">
-                <div data-aos="fade-right">
-                    <img src="hncheer.jpg" alt="公司简介" class="rounded-lg shadow-lg">
+    <!-- 关于我们 -->
+    <section id="about" class="section section-dark">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content reveal">
+                    <h2 class="about-title">关于湖南琦尔设备有限公司</h2>
+                    <p class="about-text">湖南琦尔设备有限公司是一家产权结构清晰的高科技民营企业，该公司以中国石化股份有限公司长岭分公司下属企业改制而成。为公司主营业务——固液分离设备的开展和推进提供了巨大的动力。</p>
+                    <p class="about-text">我们专注于技术创新，拥有多项自主知识产权和专利技术，致力于为客户提供高质量、高效率的工业解决方案。公司核心团队拥有丰富的行业经验和专业知识，确保为客户提供最优质的服务。</p>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">年行业经验</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">200+</div>
+                            <div class="stat-label">客户案例</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">25+</div>
+                            <div class="stat-label">技术专利</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">专业团队</div>
+                        </div>
+                    </div>
                 </div>
-                <div data-aos="fade-left">
-                    <div class="bg-gray-50 p-8 rounded-lg shadow-lg">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-4">专业的高科技企业</h3>
-                        <p class="text-gray-700 leading-relaxed mb-6">
-                            湖南琦尔设备有限公司是一家产权结构清晰的高科技民营企业，该公司以中国石化股份有限公司长岭分公司下属企业改制而成。为公司主营业务——固液分离设备的开展和推进提供了巨大的动力。
-                        </p>
-                        <div class="grid grid-cols-2 gap-4 text-center">
-                            <div class="p-4 bg-white rounded-lg shadow">
-                                <div class="text-3xl font-bold text-blue-600">10+</div>
-                                <div class="text-gray-600">年行业经验</div>
-                            </div>
-                            <div class="p-4 bg-white rounded-lg shadow">
-                                <div class="text-3xl font-bold text-blue-600">100+</div>
-                                <div class="text-gray-600">服务客户</div>
+                
+                <div class="about-card reveal" style="animation-delay:0.3s;">
+                    <div class="about-card-bg">
+                        <div class="about-card-content">
+                            <div class="about-card-circle1"></div>
+                            <div class="about-card-circle2"></div>
+                            
+                            <div class="about-company-card">
+                                <div class="company-name">湖南琦尔设备有限公司</div>
+                                <div class="company-details">
+                                    <div class="company-detail">
+                                        <span class="detail-icon"><i class="fas fa-map-marker-alt"></i></span>
+                                        <span>湖南省岳阳市</span>
+                                    </div>
+                                    <div class="company-detail">
+                                        <span class="detail-icon"><i class="fas fa-phone-alt"></i></span>
+                                        <span>+86 182-1058-9186</span>
+                                    </div>
+                                    <div class="company-detail">
+                                        <span class="detail-icon"><i class="fas fa-envelope"></i></span>
+                                        <span>contact@hncheer.com</span>
+                                    </div>
+                                    <div class="company-detail">
+                                        <span class="detail-icon"><i class="fas fa-globe"></i></span>
+                                        <span>www.hncheer.ltd</span>
+                                    </div>
+                                </div>
+                                <div class="company-tag">
+                                    <div class="company-tag-text">高科技民营企业</div>
+                                    <div class="company-tag-subtext">源自中国石化股份有限公司</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -121,138 +2021,580 @@
         </div>
     </section>
 
-    <!-- 产品服务 -->
-    <section id="products" class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-gray-900 mb-4" data-aos="fade-up">产品服务</h2>
-                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+    <!-- 新闻动态 -->
+    <section id="news" class="section section-light">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2 class="section-heading" data-text="新闻动态">新闻动态</h2>
+                <p class="section-subheading">了解湖南琦尔设备有限公司的最新动态、行业新闻和技术创新。</p>
             </div>
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- 产品1 -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
-                    <img src="jc.jpg" alt="管道泄漏检测" class="w-full">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 mb-3">管道泄漏检测综合系统</h3>
-                        <p class="text-gray-600 mb-4">针对天然气在管道泄漏实时在线监测上，采用综合法泄漏监测技术，确保管道运营安全。</p>
+            
+            <div class="card-grid">
+                <!-- 新闻1 -->
+                <div class="news-item reveal" style="animation-delay:0.1s;">
+                    <div class="news-img">
+                        <i class="fas fa-newspaper"></i>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">
+                            <i class="far fa-calendar-alt"></i>
+                            2025年5月15日
+                        </div>
+                        <h3 class="news-title">湖南琦尔设备有限公司与JorkAI合作，</h3>
+                        <p class="news-text">湖南琦尔设备有限公司与JorkAI签署战略合作协议，接入最新强大的大模型进行客服回答，大大降低人工使用率。</p>
+                        <a href="https://www.jorkai.cn" class="news-link">
+                            前往官网
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
-                <!-- 产品2 -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="100">
-                    <img src="gd.jpg" alt="管道安全技术" class="w-full">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 mb-3">管道全方面安全技术</h3>
-                        <p class="text-gray-600 mb-4">针对天然气在管道泄漏实时在线监测上，采用综合法泄漏监测技术功能，提供全面的管道安全解决方案。</p>
+                
+                <!-- 新闻2 -->
+                <div class="news-item reveal" style="animation-delay:0.3s;">
+                    <div class="news-img" style="background:linear-gradient(135deg, #8B5CF6, #6D28D9);">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">
+                            <i class="far fa-calendar-alt"></i>
+                            2025年4月28日
+                        </div>
+                        <h3 class="news-title">腾云旗下JorkAI与Tenyun Cloud Service合作</h3>
+                        <p class="news-text">腾云科技旗下JorkAI与Tenyun Cloud Service服务宣布合作，即日起，我司网站服务将正式迈向新高度</p>
+                        <a href="https://www.tenyun.ltd" class="news-link" style="color:#8B5CF6;">
+                            访问官网
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
-                <!-- 产品3 -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="200">
-                    <img src="wrj.jpg" alt="无人机巡检" class="w-full">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 mb-3">无人机智能巡检服务</h3>
-                        <p class="text-gray-600 mb-4">提供强大的无人机智能巡检及数字化管理服务，实现精准、高效的设备和管线巡检。</p>
-                        <a href="wrj.html" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition duration-300">了解更多</a>
+                
+                <!-- 新闻3 -->
+                <div class="news-item reveal" style="animation-delay:0.5s;">
+                    <div class="news-img" style="background:linear-gradient(135deg, #5D5CDE, #8B5CF6);">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">
+                            <i class="far fa-calendar-alt"></i>
+                            2024年12月13日
+                        </div>
+                        <h3 class="news-title">湖南琦尔官方网站正式上线！</h3>
+                        <p class="news-text">湖南琦尔设备有限公司官方网站：https://www.hncheer.ltd正式上线，仅此一站，侵权必究！</p>
                     </div>
                 </div>
+            </div>
+            
+            <div class="text-center reveal" style="margin-top:3rem;text-align:center;animation-delay:0.7s;">
+                <a href="#" class="btn btn-outline-primary">
+                    查看更多新闻
+                </a>
             </div>
         </div>
     </section>
 
     <!-- 联系我们 -->
-    <section id="contact" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-gray-900 mb-4" data-aos="fade-up">联系我们</h2>
-                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+    <section id="contact" class="section section-dark">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2 class="section-heading" data-text="联系我们">联系我们</h2>
+                <p class="section-subheading">无论您有任何问题或需求，我们的团队随时准备为您提供专业支持和解决方案。</p>
             </div>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-gray-50 p-8 rounded-lg shadow-lg" data-aos="fade-right">
-                    <h3 class="text-2xl font-bold text-gray-900 mb-6">联系方式</h3>
-                    <div class="space-y-4">
-                        <div class="flex items-center">
-                            <svg class="w-6 h-6 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-                            </svg>
-                            <span class="text-gray-700">+86 182-1058-9186</span>
+            
+            <div class="contact-grid">
+                <!-- 联系信息 -->
+                <div class="contact-info reveal">
+                    <h3 class="info-title">联系方式</h3>
+                    
+                    <div class="info-list">
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4 class="info-label">公司地址</h4>
+                                <p class="info-text">湖南省岳阳市</p>
+                            </div>
                         </div>
-                        <div class="flex items-center">
-                            <svg class="w-6 h-6 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-                            </svg>
-                            <span class="text-gray-700">湖南省长沙市</span>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4 class="info-label">联系电话</h4>
+                                <p class="info-text">+86 182-1058-9186</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4 class="info-label">电子邮箱</h4>
+                                <p class="info-text">contact@hnqier.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4 class="info-label">工作时间</h4>
+                                <p class="info-text">周一至周五: 9:00 - 18:00<br>周六至周日: 休息</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h4 class="social-title">关注我们</h4>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-weixin"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-weibo"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div data-aos="fade-left">
-                    <img src="hncheer.jpg" alt="联系我们" class="rounded-lg shadow-lg">
+                
+                <!-- 联系表单 -->
+                <div class="contact-form reveal" style="animation-delay:0.3s;">
+                    <h3 class="form-title">发送消息</h3>
+                    
+                    <form id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name" class="form-label">姓名</label>
+                                <input type="text" id="name" name="name" class="form-control" placeholder="您的姓名" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">邮箱</label>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="您的邮箱" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone" class="form-label">电话</label>
+                            <input type="tel" id="phone" name="phone" class="form-control" placeholder="您的电话">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" class="form-label">主题</label>
+                            <input type="text" id="subject" name="subject" class="form-control" placeholder="消息主题" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">消息内容</label>
+                            <textarea id="message" name="message" class="form-control form-textarea" placeholder="请详细描述您的需求或问题" required></textarea>
+                        </div>
+                        
+                        <div style="text-align:right;">
+                            <button type="submit" class="btn btn-primary">
+                                发送消息
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-gray-900 text-white">
-        <div class="max-w-7xl mx-auto px-4 py-12">
-            <div class="grid md:grid-cols-4 gap-8">
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
                 <div>
-                    <h3 class="text-lg font-bold mb-4">关于琦尔设备</h3>
-                    <p class="text-gray-400">专注于工业设备解决方案，为客户提供优质的管道安全监测和智能巡检服务。</p>
+                    <div class="footer-logo">
+                        <span class="footer-logo-text">cheer</span>
+                        <span class="footer-company">湖南琦尔设备有限公司</span>
+                    </div>
+                    <p class="footer-description">专注于固液分离设备的研发与制造，致力于为客户提供高效、专业的工业解决方案。</p>
+                    <div class="footer-social">
+                        <a href="#" class="footer-social-link">
+                            <i class="fab fa-weixin"></i>
+                        </a>
+                        <a href="#" class="footer-social-link">
+                            <i class="fab fa-weibo"></i>
+                        </a>
+                        <a href="#" class="footer-social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
                 </div>
+                
                 <div>
-                    <h3 class="text-lg font-bold mb-4">快速链接</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#home" class="text-gray-400 hover:text-white">首页</a></li>
-                        <li><a href="#about" class="text-gray-400 hover:text-white">关于我们</a></li>
-                        <li><a href="#products" class="text-gray-400 hover:text-white">产品服务</a></li>
-                        <li><a href="#contact" class="text-gray-400 hover:text-white">联系我们</a></li>
+                    <h4 class="footer-heading">快速链接</h4>
+                    <ul class="footer-links">
+                        <li class="footer-link-item"><a href="#home" class="footer-link">首页</a></li>
+                        <li class="footer-link-item"><a href="#business" class="footer-link">业务板块</a></li>
+                        <li class="footer-link-item"><a href="#about" class="footer-link">关于我们</a></li>
+                        <li class="footer-link-item"><a href="#news" class="footer-link">新闻动态</a></li>
+                        <li class="footer-link-item"><a href="#contact" class="footer-link">联系方式</a></li>
                     </ul>
                 </div>
+                
                 <div>
-                    <h3 class="text-lg font-bold mb-4">产品服务</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white">管道泄漏检测</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">管道安全技术</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">无人机巡检</a></li>
+                    <h4 class="footer-heading">服务项目</h4>
+                    <ul class="footer-links">
+                        <li class="footer-link-item"><a href="#drone" class="footer-link">无人机智能巡检</a></li>
+                        <li class="footer-link-item"><a href="#pipeline" class="footer-link">管道安全技术</a></li>
+                        <li class="footer-link-item"><a href="#separation" class="footer-link">固液分离设备</a></li>
+                        <li class="footer-link-item"><a href="#" class="footer-link">技术咨询</a></li>
+                        <li class="footer-link-item"><a href="#" class="footer-link">售后支持</a></li>
                     </ul>
                 </div>
+                
                 <div>
-                    <h3 class="text-lg font-bold mb-4">联系方式</h3>
-                    <ul class="space-y-2">
-                        <li class="text-gray-400">电话：+86 182-1058-9186</li>
-                        <li class="text-gray-400">地址：湖南省长沙市</li>
-                    </ul>
+                    <h4 class="footer-heading">联系信息</h4>
+                    <div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-map-marker-alt footer-contact-icon"></i>
+                            <span>湖南省岳阳市</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-phone-alt footer-contact-icon"></i>
+                            <span>+86 182-1058-9186</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-envelope footer-contact-icon"></i>
+                            <span>contact@hncheer.com</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-clock footer-contact-icon"></i>
+                            <span>周一至周五: 9:00 - 18:00</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="container mx-auto flex flex-col items-center">
-                <p class="mb-2">版权所有 © 湖南琦尔设备责任有限公司</p>
-                <a href="https://www.tenyun.ltd" target="_blank" class="text-blue-400 hover:text-blue-600">Power by Tenyun cloud service Premium Hosting</a>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 湖南琦尔设备有限公司. 保留所有权利.</p>
             </div>
         </div>
     </footer>
 
-    <!-- 添加 AOS 动画库 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    
+    <!-- 聊天小组件 -->
+    <div class="chat-widget">
+        <div class="chat-button" id="chat-toggle">
+            <i id="chat-icon-open" class="fas fa-comments"></i>
+            <i id="chat-icon-close" class="fas fa-times" style="display:none;"></i>
+        </div>
+        
+        <div class="chat-popup" id="chat-popup">
+            <div class="chat-header">
+                <div class="chat-header-inner">
+                    <div class="chat-avatar">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div>
+                        <h4 class="chat-title">智能客服</h4>
+                        <p class="chat-subtitle">由 JorkAI 提供支持</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chat-body">
+                <div class="chat-messages" id="chat-messages">
+                    <div class="message bot">
+                        您好！我是湖南琦尔设备有限公司的智能客服，很高兴为您服务。请问有什么可以帮助您的吗？
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chat-footer">
+                <form id="chat-form" class="chat-form">
+                    <input type="text" id="chat-input" class="chat-input" placeholder="请输入您的问题...">
+                    <button type="submit" class="chat-send">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+                <div class="chat-powered">
+                    <a href="https://jorkai.cn" target="_blank">由 JorkAI 提供技术支持</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 返回顶部按钮 -->
+    <div class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+
     <!-- JavaScript -->
     <script>
-        // 初始化 AOS
-        AOS.init({
-            duration: 1000,
-            once: true
+        // 导航栏滚动效果
+        const header = document.getElementById('header');
+        const backToTop = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+                backToTop.classList.add('visible');
+            } else {
+                header.classList.remove('scrolled');
+                backToTop.classList.remove('visible');
+            }
         });
-
-        // 移动端菜单切换
-        function toggleMenu() {
-            const menu = document.querySelector('.mobile-menu');
-            menu.classList.toggle('hidden');
-        }
-
-        // 点击链接后关闭移动端菜单
-        document.querySelectorAll('.mobile-menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                document.querySelector('.mobile-menu').classList.add('hidden');
+        
+        // 返回顶部
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
             });
         });
+
+        // 移动导航
+        const hamburger = document.getElementById('hamburger');
+        const mobileNav = document.getElementById('mobile-nav');
+        
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            mobileNav.classList.toggle('active');
+            document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+        });
+        
+        // 关闭移动导航和点击导航链接
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                mobileNav.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    const headerHeight = document.querySelector('.header').offsetHeight;
+                    const targetPosition = targetElement.offsetTop - headerHeight;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // 滚动动画
+        function revealElements() {
+            const elements = document.querySelectorAll('.reveal');
+            const windowHeight = window.innerHeight;
+            const revealPoint = 150;
+            
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                if (elementTop < windowHeight - revealPoint) {
+                    element.classList.add('active');
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', revealElements);
+        window.addEventListener('load', revealElements);
+
+        // 聊天小组件
+        const chatToggle = document.getElementById('chat-toggle');
+        const chatPopup = document.getElementById('chat-popup');
+        const chatIconOpen = document.getElementById('chat-icon-open');
+        const chatIconClose = document.getElementById('chat-icon-close');
+        const chatForm = document.getElementById('chat-form');
+        const chatInput = document.getElementById('chat-input');
+        const chatMessages = document.getElementById('chat-messages');
+        
+        chatToggle.addEventListener('click', () => {
+            chatPopup.classList.toggle('active');
+            
+            if (chatPopup.classList.contains('active')) {
+                chatIconOpen.style.display = 'none';
+                chatIconClose.style.display = 'inline-block';
+                chatInput.focus();
+            } else {
+                chatIconOpen.style.display = 'inline-block';
+                chatIconClose.style.display = 'none';
+            }
+        });
+        
+        chatForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const message = chatInput.value.trim();
+            if (!message) return;
+            
+            // 添加用户消息
+            addMessage(message, 'user');
+            chatInput.value = '';
+            
+            // 显示"正在输入"状态
+            const typingDiv = document.createElement('div');
+            typingDiv.className = 'message typing';
+            typingDiv.innerHTML = '<div class="typing-dots"><div class="typing-dot"></div><div class="typing-dot"></div><div class="typing-dot"></div></div>';
+            chatMessages.appendChild(typingDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+            
+            // 模拟AI回复
+            setTimeout(() => {
+                typingDiv.remove();
+                const response = getAIResponse(message);
+                addMessage(response, 'bot');
+            }, 1500);
+        });
+        
+        function addMessage(text, sender) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${sender}`;
+            messageDiv.textContent = text;
+            chatMessages.appendChild(messageDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+        
+        function getAIResponse(userMessage) {
+            // 增强版关键词检测逻辑
+            const userMessageLower = userMessage.toLowerCase();
+            
+            // 基础问候
+            if (userMessageLower.includes('你好') || userMessageLower.includes('您好') || userMessageLower.includes('hi') || userMessageLower.includes('hello') || userMessageLower.includes('早上好') || userMessageLower.includes('下午好') || userMessageLower.includes('晚上好')) {
+                const hour = new Date().getHours();
+                if (hour < 12) {
+                    return '早上好！我是琦尔智能客服，很高兴为您服务。请问有什么可以帮助您的吗？';
+                } else if (hour < 18) {
+                    return '下午好！我是琦尔智能客服，很高兴为您服务。请问有什么可以帮助您的吗？';
+                } else {
+                    return '晚上好！我是琦尔智能客服，很高兴为您服务。请问有什么可以帮助您的吗？';
+                }
+            } 
+            
+            // 联系方式
+            else if (userMessageLower.includes('联系') || userMessageLower.includes('电话') || userMessageLower.includes('手机') || userMessageLower.includes('微信') || userMessageLower.includes('邮箱') || userMessageLower.includes('邮件') || userMessageLower.includes('发邮件')) {
+                return '您可以通过以下方式联系我们：\n\n电话：+86 182-1058-9186\n\n邮箱：contact@hncheer.ltd\n\n工作时间：周一至周五 9:00 - 18:00\n\n如您有紧急事项，请直接拨打电话联系我们。';
+            } 
+            
+            // 地址和位置
+            else if (userMessageLower.includes('地址') || userMessageLower.includes('位置') || userMessageLower.includes('在哪') || userMessageLower.includes('在哪里') || userMessageLower.includes('怎么去') || userMessageLower.includes('怎么走')) {
+                return '湖南琦尔设备有限公司位于湖南省岳阳市。如需详细地址和到达方式，请联系我们的客服人员：+86 182-1058-9186，我们将提供详细的位置信息和交通指南。';
+            } 
+            
+            // 产品和服务综合咨询
+            else if (userMessageLower.includes('产品') || userMessageLower.includes('服务') || userMessageLower.includes('业务') || userMessageLower.includes('解决方案') || userMessageLower.includes('方案')) {
+                return '湖南琦尔设备有限公司提供三大核心业务：\n\n1. 无人机智能巡检服务——利用先进AI技术进行自动化工业设施检测\n\n2. 管道全方面安全技术——提供压力监测、泄漏防护等全生命周期解决方案\n\n3. 固液分离设备——专业研发制造各类高效分离设备\n\n您想了解哪一项具体业务？';
+            } 
+            
+            // 无人机相关
+            else if (userMessageLower.includes('无人机') || userMessageLower.includes('巡检') || userMessageLower.includes('检测') || userMessageLower.includes('飞行') || userMessageLower.includes('航拍') || userMessageLower.includes('监测')) {
+                return '我们的无人机智能巡检服务是行业领先的自动化解决方案：\n\n· 采用高精度摄像与热成像技术\n· AI驱动的自动缺陷识别与智能报告生成\n· 全天候作业能力，适应各种复杂环境\n· 大幅提升检测效率，降低人工成本和安全风险\n· 可定制的巡检方案，满足不同行业需求\n\n我们已为石油化工、电力、市政等多个行业提供服务。需要了解更多技术细节或预约演示，请联系我们的技术团队。';
+            } 
+            
+            // 管道技术相关
+            else if (userMessageLower.includes('管道') || userMessageLower.includes('安全技术') || userMessageLower.includes('压力') || userMessageLower.includes('泄漏') || userMessageLower.includes('腐蚀') || userMessageLower.includes('维护')) {
+                return '我们的管道安全技术解决方案全面保障设备安全运行：\n\n· 实时压力监测系统，精确到0.01MPa\n· 先进泄漏检测与防护机制，反应时间<1秒\n· 基于机器学习的腐蚀分析与寿命评估\n· 智能预测性维护系统，提前预警潜在故障\n· 全生命周期数据管理与分析平台\n\n我们已在300+项目中成功应用该技术，有效降低设备事故率达85%。想了解更多或获取技术白皮书，请联系我们的工程师团队。';
+            } 
+            
+            // 固液分离相关
+            else if (userMessageLower.includes('固液') || userMessageLower.includes('分离') || userMessageLower.includes('设备') || userMessageLower.includes('过滤') || userMessageLower.includes('沉淀') || userMessageLower.includes('分离器')) {
+                return '我们专业研发和制造的高效固液分离设备具有以下特点：\n\n· 分离效率高达99.9%，处理速度比传统设备提升40%\n· 独特的自清洁技术，减少维护时间和成本\n· 智能控制系统，可远程监控和调整运行参数\n· 模块化设计，易于安装和升级\n· 节能环保设计，能耗降低25%以上\n\n我们的设备广泛应用于石油化工、环保、矿山、食品加工等行业。可根据您的具体需求提供定制化解决方案，请联系我们的产品专员进行详细咨询。';
+            } 
+            
+            // 价格咨询
+            else if (userMessageLower.includes('价格') || userMessageLower.includes('报价') || userMessageLower.includes('多少钱') || userMessageLower.includes('费用') || userMessageLower.includes('预算') || userMessageLower.includes('成本')) {
+                return '我们的产品和服务价格根据具体配置、规模和需求有所不同。我们承诺提供业内最具竞争力的价格和最优质的服务。\n\n为了给您提供最准确的报价，请您提供以下信息：\n1. 您需要的具体产品/服务类型\n2. 项目规模和要求\n3. 预期使用环境\n\n您可以联系我们的销售团队获取详细报价：\n电话：+86 182-1058-9186\n邮箱：sales@hnqier.com';
+            } 
+            
+            // 工作时间
+            else if (userMessageLower.includes('时间') || userMessageLower.includes('工作时间') || userMessageLower.includes('上班') || userMessageLower.includes('下班') || userMessageLower.includes('营业')) {
+                return '湖南琦尔设备有限公司的工作时间如下：\n\n周一至周五：上午9:00至下午18:00\n周六、周日及法定节假日：休息\n\n若您有紧急事项需要联系，请拨打我们的24小时服务热线：+86 182-1058-9186';
+            }
+            
+            // 公司信息
+            else if (userMessageLower.includes('公司') || userMessageLower.includes('关于') || userMessageLower.includes('介绍') || userMessageLower.includes('简介') || userMessageLower.includes('历史') || userMessageLower.includes('背景')) {
+                return '湖南琦尔设备有限公司是一家产权结构清晰的高科技民营企业，源自中国石化股份有限公司长岭分公司下属企业改制。\n\n公司成立15年来，已服务200+企业客户\n拥有25+项专利技术和自主知识产权\n由50+位行业专家组成的专业团队\n业务覆盖全国多个省份及部分国际市场\n\n我们专注于固液分离设备的研发与制造，并提供无人机智能巡检和管道安全技术服务，致力于为客户提供高效、专业的工业解决方案。';
+            }
+            
+            // 智能客服能力
+            else if (userMessageLower.includes('智能') || userMessageLower.includes('机器人') || userMessageLower.includes('客服') || userMessageLower.includes('人工') || userMessageLower.includes('真人') || userMessageLower.includes('ai')) {
+                return '我是湖南琦尔设备有限公司的智能客服助手，由JorkAI提供技术支持。\n\n我可以解答关于公司产品、服务、联系方式等常见问题，但我的能力有限。\n\n如需更专业或复杂的咨询，建议联系我们的人工客服：\n电话：+86 182-1058-9186\n\n感谢您的理解！';
+            }
+            
+            // 其他问题的默认回复
+            else {
+                return '感谢您的咨询。很抱歉，我可能没有完全理解您的问题。您可以尝试询问以下常见话题：\n\n· 公司介绍\n· 产品和服务\n· 联系方式\n· 技术咨询\n· 售后服务\n\n如需直接联系人工客服，请拨打：+86 182-1058-9186';
+            }
+        }
+        
+        // 表单提交
+        const contactForm = document.getElementById('contact-form');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // 模拟表单提交
+            const submitButton = contactForm.querySelector('button[type="submit"]');
+            const originalText = submitButton.innerHTML;
+            
+            submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> 发送中...';
+            submitButton.disabled = true;
+            
+            setTimeout(() => {
+                submitButton.innerHTML = '<i class="fas fa-check"></i> 发送成功';
+                
+                setTimeout(() => {
+                    submitButton.innerHTML = originalText;
+                    submitButton.disabled = false;
+                    contactForm.reset();
+                }, 2000);
+            }, 1500);
+        });
+        
+        // 设置活动导航链接
+        function setActiveNavLink() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+            
+            let currentSectionId = '';
+            const scrollPosition = window.scrollY + window.innerHeight / 3;
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.offsetHeight;
+                
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    currentSectionId = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${currentSectionId}`) {
+                    link.classList.add('active');
+                }
+            });
+            
+            mobileNavLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${currentSectionId}`) {
+                    link.classList.add('active');
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', setActiveNavLink);
+        window.addEventListener('load', setActiveNavLink);
     </script>
 </body>
 </html>
